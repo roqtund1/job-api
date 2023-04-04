@@ -2,11 +2,11 @@
 
 #### Project Setup
 
-In order to spin up the project, in the root create .env with these two variables, with your own values.
-Also in the .env file, create another variable jwt_lifetime and set the value to '30d'. 
+In order to spin up the project, in the root create .env with the following variables, set first two to your values, and the last one to '30':
 
 mongo_uri
 jwt_secret
+jwt_lifetime
 
 After that run this command
 
