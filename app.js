@@ -26,7 +26,9 @@ const { BadRequest } = require('./errors');
 
 
 //middleware
+app.use(express.static('./public'));
 app.use(express.json())
+
 
 // security packages
 app.set('trust proxy', 1);
@@ -40,7 +42,7 @@ app.use(xss())
 
 app.get('/', (req, res)=>{
 
-    res.send('<h1>Job API</h1>')
+    res.send('<h1>Job API</h1><a href="/api-docs">Documentation</a>')
 })
 
 
